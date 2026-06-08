@@ -722,6 +722,39 @@ body {
         letter-spacing: 2px;
     }
 }
+		/* ===== 手機版：按鈕整體上移覆蓋版 ===== */
+@media (max-width: 768px) {
+
+    .title-btn-wrap {
+        position: absolute !important;
+        bottom: 18% !important;
+        width: 100% !important;
+        text-align: center !important;
+        color: white !important;
+        z-index: 8 !important;
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    .choice-wrap {
+        bottom: 18% !important;
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    .next-btn-wrap {
+        right: 50% !important;
+        bottom: 24% !important;
+        transform: translateX(50%) !important;
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    .next-btn-wrap.nav-btn-wrap {
+        right: 50% !important;
+        bottom: 26% !important;
+        transform: translateX(50%) !important;
+        gap: 10px !important;
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+}
 /* ===== 幕一標題背景輪播 ===== */
 #lee-title-screen .bg-slider {
     position: absolute;
